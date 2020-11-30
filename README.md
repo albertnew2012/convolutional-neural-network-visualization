@@ -8,4 +8,5 @@ In this project, I demonstrated how to visualize convolutional neural network (C
 except that Visualizing activation and feature maps which is a forward propagation, visualzing reconstruction from a layer, visualizing classes, and visualizing neural style transfer are a backward propagation utilizing gradient descent. The model used in this project is VGG16, but other models would work similarly.
 
 ### visualize activation
-![activation_block1_conv1](https://user-images.githubusercontent.com/58440102/100676279-767e7800-331d-11eb-8fdb-ba1b9214d012.png)
+<img src="output/visualize_activation/activation_block1_conv1.png">
+
