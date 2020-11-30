@@ -8,6 +8,7 @@ In this project, I demonstrated how to visualize convolutional neural network (C
 except that Visualizing activation and feature maps which is a forward propagation, visualzing reconstruction from a layer, visualizing classes, and visualizing neural style transfer are a backward propagation utilizing gradient descent. The model used in this project is VGG16, but other models would work similarly.
 
 ### visualize activation
+The model is VGG16, a pretrained model with imagenet. Here I pass a image of dog into the model and record the activation of the image as it goes through each layer of the model.From the activation shown below, one can see that what the kernal does is detecting edges, circle and then gradually combine them to detect eyes, ear, noises and other shapes. 
 ![Capture1](https://user-images.githubusercontent.com/58440102/100679112-9f097080-3323-11eb-92d9-629e7cf656f3.PNG)
 ![Capture2](https://user-images.githubusercontent.com/58440102/100679106-9add5300-3323-11eb-9d82-8c056bf419ef.PNG)
 ![Capture3](https://user-images.githubusercontent.com/58440102/100679109-9ca71680-3323-11eb-89a7-a0af29820aa8.PNG)
