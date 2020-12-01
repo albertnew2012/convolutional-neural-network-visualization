@@ -1,7 +1,7 @@
 
 # convolutional-neural-network-visualization
 In this project, I demonstrated how to visualize a convolutional neural network (ConvNet) with TensorFlow 2.x. Visualizing the intermediate steps taking place inside any ConvNet is critical for understanding how it works and improving the existing model. This project includes four parts: 
-1. visualize the activation
+1. visualize feature map and activation
 2. visualize reconstruction from each layer
 3. visualize classes 
 4. visualize neural styler transfer
