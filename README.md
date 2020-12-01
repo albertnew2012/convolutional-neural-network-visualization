@@ -15,3 +15,8 @@ The model is VGG16, a pretrained model with imagenet. Here I pass a image of dog
 ![Capture4](https://user-images.githubusercontent.com/58440102/100679110-9dd84380-3323-11eb-894e-82cb82cee261.PNG)
 ![Capture5](https://user-images.githubusercontent.com/58440102/100679111-9e70da00-3323-11eb-9cbc-5a0fe602e015.PNG)
 
+### visualize reconstruction from a layer
+Reconstructing an image from its feature map is a direct application of gradient descent. Given the output from a layer for an input image, we can reconstruct it by initializing a random noise image and minimizing the loss (a content based loss function) with tf.GradientTap
+![block1_conv1](https://user-images.githubusercontent.com/58440102/100680062-a2056080-3325-11eb-8280-befb290d9800.png)
+![block1_conv2](https://user-images.githubusercontent.com/58440102/100680065-a3368d80-3325-11eb-9559-8a12f25a1c1c.png)
+![block2_conv1](https://user-images.githubusercontent.com/58440102/100680070-a467ba80-3325-11eb-9c63-9b7de25316b8.png)
