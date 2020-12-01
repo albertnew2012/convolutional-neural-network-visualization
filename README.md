@@ -10,6 +10,7 @@ except that Visualizing activation and feature maps which is a forward propagati
 
 ### visualize activation
 The model is VGG16, a pre-trained model with imagenet. Here I pass an image of a dog into the model and record the activation of the image as it goes through each layer of the model. From the activation shown below, one can see that what the kernel does is detecting edges, circles,s and then gradually combine them to detect eyes, ears, noses, and other shapes. 
+
 ![Capture1](https://user-images.githubusercontent.com/58440102/100679112-9f097080-3323-11eb-92d9-629e7cf656f3.PNG)
 ![Capture2](https://user-images.githubusercontent.com/58440102/100679106-9add5300-3323-11eb-9d82-8c056bf419ef.PNG)
 ![Capture3](https://user-images.githubusercontent.com/58440102/100679109-9ca71680-3323-11eb-89a7-a0af29820aa8.PNG)
@@ -18,16 +19,19 @@ The model is VGG16, a pre-trained model with imagenet. Here I pass an image of a
 
 ### visualize reconstruction from a layer
 Reconstructing an image from its feature map is a direct application of gradient descent. Given the output from a layer for an input image, we can reconstruct it by initializing a random noise image and minimizing the loss (a content-based loss function) with tf.GradientTap
+
 ![block1_conv1](https://user-images.githubusercontent.com/58440102/100680062-a2056080-3325-11eb-8280-befb290d9800.png)
 ![block1_conv2](https://user-images.githubusercontent.com/58440102/100680065-a3368d80-3325-11eb-9559-8a12f25a1c1c.png)
 ![block2_conv1](https://user-images.githubusercontent.com/58440102/100680070-a467ba80-3325-11eb-9c63-9b7de25316b8.png)
 
 ### visualize classes
 Visualizing classes of the CNN model gives us more in deep knowledge of the model as to what the model is looking for in each class. visualizing classes is similar to visualizing reconstruction from a layer, except that the layer is the prediction layer. Each neuron among the 1000 neurons is detecting a specific class. Here I choose to visual 'French_bulldog', 'bubble', 'Persian_cat', 'violin', 'teddy', 'mountain_bike', 'mushroom','umbrella'. 
+
 ![classes](https://user-images.githubusercontent.com/58440102/100680521-95353c80-3326-11eb-88b9-587ca3641ad8.png)
 
 ### visualize nueral styler tansfer
 Neural style transfer can make a mundane, boring image artistic immediately. The process is very similar to other kinds of visualization as well. It starts by passing in the target image through a CNN model, the model will generate feature maps at each layer. These feature maps contain the style information of the target image. Then it takes another image to be transferred as initial input. Then using gradient descent to minimize the feature maps at each layer between the target image and initial image. The difference from reconstruction from a layer is the loss function. Here a style-based loss function is defined with a style matrix (Gram matrix).
+
 ![block1_conv1](https://user-images.githubusercontent.com/58440102/100680830-4f2ca880-3327-11eb-9522-de63cf29df89.png)
 ![block1_conv2](https://user-images.githubusercontent.com/58440102/100680831-4fc53f00-3327-11eb-9f61-10d7c51ca405.png)
 ![block2_conv1](https://user-images.githubusercontent.com/58440102/100680832-505dd580-3327-11eb-88c4-f34f39449195.png)
