@@ -6,7 +6,8 @@ In this project, I demonstrated how to visualize a convolutional neural network 
 3. visualize classes 
 4. visualize neural styler transfer
 
-except that Visualizing activation and feature maps which is a forward propagation, visualizing reconstruction from a layer, visualizing classes, and visualizing neural style transfer are backward propagation utilizing gradient descent. The model used in this project is VGG16, but other models would work similarly.
+Except that Visualizing activation and feature maps which is a forward propagation, visualizing reconstruction from a layer, visualizing classes, and visualizing neural style transfer are backward propagation utilizing gradient descent. The model used in this project is VGG16, but other models would work similarly.The input image is a picture of a dog: 
+![dog](https://user-images.githubusercontent.com/58440102/100690104-b30c9c80-333a-11eb-88d5-20123f463885.jpeg)
 
 ### visualize activation
 The model is VGG16, a pre-trained model with imagenet. Here I pass an image of a dog into the model and record the activation of the image as it goes through each layer of the model. From the activation shown below, one can see that what the kernel does is detecting edges, circles,s and then gradually combine them to detect eyes, ears, noses, and other shapes. 
