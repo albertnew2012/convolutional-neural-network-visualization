@@ -20,3 +20,16 @@ Reconstructing an image from its feature map is a direct application of gradient
 ![block1_conv1](https://user-images.githubusercontent.com/58440102/100680062-a2056080-3325-11eb-8280-befb290d9800.png)
 ![block1_conv2](https://user-images.githubusercontent.com/58440102/100680065-a3368d80-3325-11eb-9559-8a12f25a1c1c.png)
 ![block2_conv1](https://user-images.githubusercontent.com/58440102/100680070-a467ba80-3325-11eb-9c63-9b7de25316b8.png)
+
+### visualize classes
+Visualizing classes of CNN model gives us more indeep knowledge of the model as what the model is looking for for each class. visualizing classes is similar to visualizing reconstruction from a layer, except that the layer is prediction layer. Each neuron among the 1000 nuerons is detecting a specific classes. Here I choose to visual 'French_bulldog', 'bubble', 'Persian_cat', 'violin', 'teddy', 'mountain_bike', 'mushroom','umbrella'. 
+![classes](https://user-images.githubusercontent.com/58440102/100680521-95353c80-3326-11eb-88b9-587ca3641ad8.png)
+
+### visualize nueral styler tansfer
+Neural style transfer can make a mandune, boring image artistic immediately.The process is very similar to other kind of visualization as well. It starts by passing in the target image through a CNN model, model will generate feature maps at each layer. These feature maps contain the style information of the target image. Then it takes another image to be transfered as initial input. Then using gradient descent to minize the feature maps at each layer between target image and initial image. The difference from reconstruction from a layer is the loss function. Here a style based loss function is defined with style matrix (Gram matrix).
+![block1_conv1](https://user-images.githubusercontent.com/58440102/100680830-4f2ca880-3327-11eb-9522-de63cf29df89.png)
+![block1_conv2](https://user-images.githubusercontent.com/58440102/100680831-4fc53f00-3327-11eb-9f61-10d7c51ca405.png)
+![block2_conv1](https://user-images.githubusercontent.com/58440102/100680832-505dd580-3327-11eb-88c4-f34f39449195.png)
+![block2_conv2](https://user-images.githubusercontent.com/58440102/100680833-50f66c00-3327-11eb-9f83-53d028d80c08.png)
+![block3_conv1](https://user-images.githubusercontent.com/58440102/100680837-518f0280-3327-11eb-98be-b519849ddb0c.png)
+![block3_conv2](https://user-images.githubusercontent.com/58440102/100680829-4e941200-3327-11eb-9943-d2b42a95c871.png)
