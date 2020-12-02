@@ -28,8 +28,8 @@ Reconstructing an image from its feature map is a direct application of gradient
 
 ### visualize classes
 Visualizing classes of the CNN model gives us more in deep knowledge of the model as to what the model is looking for in each class. visualizing classes is similar to visualizing reconstruction from a layer, except that the layer is the prediction layer. Each neuron among the 1000 neurons is detecting a specific class. Here I choose to visual 'French_bulldog', 'bubble', 'Persian_cat', 'violin', 'teddy', 'mountain_bike', 'mushroom','umbrella'. 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iTOCTLt3r78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-![classes](https://user-images.githubusercontent.com/58440102/100680521-95353c80-3326-11eb-88b9-587ca3641ad8.png)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/iTOCTLt3r78/0.jpg)](https://www.youtube.com/watch?v=iTOCTLt3r78)
 
 ### visualize nueral styler tansfer
 Neural style transfer can make a mundane, boring image artistic immediately. The process is very similar to other kinds of visualization as well. It starts by passing in the target image through a CNN model, the model will generate feature maps at each layer. These feature maps contain the style information of the target image. Then it takes another image to be transferred as initial input. Then using gradient descent to minimize the feature maps at each layer between the target image and initial image. The difference from reconstruction from a layer is the loss function. Here a style-based loss function is defined with a style matrix (Gram matrix).
