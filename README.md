@@ -28,7 +28,7 @@ Reconstructing an image from its feature map is a direct application of gradient
 
 ### visualize classes
 Visualizing classes of the CNN model gives us more in deep knowledge of the model as to what the model is looking for in each class. visualizing classes is similar to visualizing reconstruction from a layer, except that the layer is the prediction layer. Each neuron among the 1000 neurons is detecting a specific class. Here I choose to visual 'French_bulldog', 'bubble', 'Persian_cat', 'violin', 'teddy', 'mountain_bike', 'mushroom','umbrella'. 
-![classes0](https://youtu.be/iTOCTLt3r78)
+![classes0](https://www.youtube.com/embed/iTOCTLt3r78)
 ![classes](https://user-images.githubusercontent.com/58440102/100680521-95353c80-3326-11eb-88b9-587ca3641ad8.png)
 
 ### visualize nueral styler tansfer
