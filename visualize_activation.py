@@ -47,7 +47,8 @@ def view_layer(feature_maps, layers_name, input_img):
         plt.axis("off")
         plt.imshow(features)
         plt.savefig(f"output/visualize_activation/feature_{layer_name}.png")
-        # plt.show()
+        plt.show()
+        plt.close()  # Close figure after displaying
 
         plt.figure()
         plt.title(f"activation {layer_name}")
@@ -55,7 +56,7 @@ def view_layer(feature_maps, layers_name, input_img):
         plt.axis("off")
         plt.show()
         plt.savefig(f"output/visualize_activation/activation_{layer_name}.png")
-
+        plt.close()  # Close figure after displaying
 
 def load_model(model, layers_name):
     if type(layers_name) is str:
@@ -89,6 +90,7 @@ if __name__ == '__main__':
     plt.imshow(output.astype(np.uint8))
     plt.savefig("output/visualize_activation/detection_sum.png")
     # plt.close("all")
+    plt.show()
 
     # show the object being detected in by the last convNet layer
     layers_name = [layer.name for layer in model.layers if "fc" in layer.name]
@@ -98,3 +100,4 @@ if __name__ == '__main__':
     plt.figure()
     plt.imshow(output_fc2_img)
     plt.savefig("output/visualize_activation/fc2.png")
+    plt.show()
